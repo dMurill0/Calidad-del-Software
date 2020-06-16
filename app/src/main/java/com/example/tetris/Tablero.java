@@ -11,8 +11,8 @@ import java.util.Random;
 
 public class Tablero {
 
-    private final int alturaTablero = 20;
-    private final int anchuraTablero = 10;
+    private static int alturaTablero = 20;
+    private static int anchuraTablero = 10;
     public int tab[][] = new int[anchuraTablero][alturaTablero];
     private final Random random = new Random();
     public ArrayList<Pieza> listaPiezas = new ArrayList<Pieza>();
@@ -610,6 +610,12 @@ public class Tablero {
         return this.anchuraTablero;
     }
 
+    public void añadeAlturaTablero(int altura){
+        this.alturaTablero += altura ;
+    }
+    public void añadeAnchuraTablero(int ancho){
+        this.anchuraTablero += ancho;
+    }
     public void comprobarRotar(Pieza p) {
         Pieza aux = new Pieza(p.id, 0);
 
