@@ -8,7 +8,7 @@ public class OpcionesActivityTest {
 
     @Test
     public void SetColorTest(){
-        opcionesActivity.
+        
     }
 
 }
